@@ -1,0 +1,19 @@
+default_platform(:android)
+
+platform :android do
+  desc "Build release APK"
+  lane :release do
+    gradle(
+      task: "assembleRelease",
+      build_type: "Release"
+    )
+  end
+
+  desc "Build debug APK"
+  lane :debug do
+    gradle(
+      task: "assembleDebug",
+      build_type: "Debug"
+    )
+  end
+end

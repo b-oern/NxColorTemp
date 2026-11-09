@@ -1,0 +1,4 @@
+- Initial release
+- Real-time color temperature measurement using Robertson CCT algorithm
+- Visual scale from 2000 K to 8000 K
+- Color name descriptions for different lighting conditions

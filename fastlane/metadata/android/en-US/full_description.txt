@@ -1,0 +1,26 @@
+NxColorTemp - Color Temperature Sensor
+
+Measures the color temperature (in Kelvin, scale 2000-8000 K) of the central 50% of the camera image in real-time and displays it on a visual scale.
+
+Features:
+- Real-time color temperature measurement using the device camera
+- Visual scale from 2000 K (candlelight) to 8000 K (blue sky)
+- Color names for different lighting conditions
+- Scientific algorithm: sRGB → CIE XYZ → CIE 1960 uv → Robertson CCT
+
+The app analyzes the center of the camera view and calculates the correlated color temperature using the Robertson algorithm based on CIE 1960 coordinates.
+
+Color temperature descriptions:
+- 2000-2500 K: Candlelight
+- 2500-3000 K: Incandescent (warm)
+- 3000-3500 K: Warm white
+- 3500-4000 K: Neutral white
+- 4000-5000 K: Morning light / Sunrise
+- 5000-5500 K: Daylight (sunny)
+- 5500-6500 K: Direct sunlight
+- 6500-7000 K: Lightly cloudy
+- 7000-7500 K: Overcast sky
+- 7500-8000 K: Blue sky / Deep shadow
+
+Required permissions:
+- Camera: Required for color temperature measurement

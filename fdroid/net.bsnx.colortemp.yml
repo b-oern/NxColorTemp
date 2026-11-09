@@ -1,0 +1,27 @@
+# Vorlage für den Merge-Request an https://gitlab.com/fdroid/fdroiddata
+# Ablage dort: metadata/net.bsnx.colortemp.yml
+# Vor dem Einreichen: `fdroid lint net.bsnx.colortemp` und `fdroid rewritemeta net.bsnx.colortemp` laufen lassen.
+Categories:
+  - Science & Education
+License: MIT
+AuthorName: Björn Salgert
+SourceCode: https://github.com/b-oern/NxColorTemp
+IssueTracker: https://github.com/b-oern/NxColorTemp/issues
+
+AutoName: NxColorTemp
+
+RepoType: git
+Repo: https://github.com/b-oern/NxColorTemp.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1

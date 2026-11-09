@@ -1,0 +1,1 @@
+Real-time color temperature meter (2000-8000 K) using the camera
